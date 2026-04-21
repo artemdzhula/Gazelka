@@ -1,0 +1,1 @@
+﻿public record UpdateProfileDto(string Email, string Name, string Surname, string? PhoneNumber, string? CarType, string? CarColor, string? CarNumber, string? CityName);

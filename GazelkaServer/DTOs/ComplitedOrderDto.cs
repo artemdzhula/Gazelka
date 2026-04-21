@@ -1,0 +1,1 @@
+﻿public record ComplitedOrderDto(int OrderId);

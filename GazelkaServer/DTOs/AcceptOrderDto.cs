@@ -1,0 +1,1 @@
+﻿public record AcceptOrderDto(int OrderId);

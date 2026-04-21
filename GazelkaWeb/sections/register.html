@@ -1,0 +1,78 @@
+<section class="auth-overlay" id="auth-section">
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2 class="auth-card__title">Registration</h2>
+
+      <form class="auth-form" action="javascript:void(0);">
+        <input
+          type="text"
+          id="reg-name"
+          name="name"
+          class="auth-input"
+          placeholder="Name"
+          required
+        />
+
+        <input
+          type="text"
+          id="reg-surname"
+          name="surname"
+          class="auth-input"
+          placeholder="Surname"
+          required
+        />
+
+        <input
+          type="email"
+          id="reg-email"
+          name="email"
+          class="auth-input"
+          placeholder="Email"
+          required
+          autocomplete="email"
+        />
+
+        <input
+          type="tel"
+          id="reg-phone"
+          name="phone"
+          class="auth-input"
+          placeholder="Phone number"
+          required
+        />
+
+        <div class="password-wrapper">
+          <input
+            type="password"
+            id="reg-password"
+            name="password"
+            class="auth-input"
+            placeholder="Password"
+            required
+            autocomplete="new-password"
+          />
+          <button
+            type="button"
+            id="toggle-password"
+            class="password-toggle-btn"
+          >
+            <img
+              src="assets/icons/ic_visibility_off.svg"
+              alt="Show Password"
+              id="password-icon"
+            />
+          </button>
+        </div>
+
+        <button type="button" class="btn--auth-submit" id="next-step-btn">
+          Next step
+        </button>
+      </form>
+
+      <p class="auth-switch">
+        Already have an account?
+        <a href="javascript:void(0);" id="to-login-link">Login!</a>
+      </p>
+    </div>
+  </main>
+</section>

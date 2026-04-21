@@ -1,0 +1,146 @@
+<section class="order-page-container">
+  <div class="section-header">
+    <button id="back-to-landing" class="section-header-btn">
+      <img src="assets/icons/logo.svg" alt="Home" />
+    </button>
+
+    <h1>New order</h1>
+
+    <div class="section-menu-wrapper" id="menu-container">
+      <button id="menu-toggle-btn" class="section-menu-burger">
+        <img src="assets/icons/ic_menu.svg" alt="Menu" />
+      </button>
+
+      <div class="section-menu-list" id="side-menu">
+        <button class="section-menu-item" id="menu-new-order">
+          <img src="assets/icons/ic_add.svg" alt="Add" />
+        </button>
+        <button class="section-menu-item" id="menu-chat">
+          <img src="assets/icons/ic_chat.svg" alt="Chat" />
+        </button>
+        <button class="section-menu-item" id="menu-history">
+          <img src="assets/icons/ic_history.svg" alt="History" />
+        </button>
+        <button class="section-menu-item" id="menu-settings">
+          <img src="assets/icons/ic_settings.svg" alt="Settings" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="order-form-content">
+    <div class="address-group">
+      <div class="input-wrapper">
+        <img src="assets/icons/ic_location.svg" />
+        <input type="text" id="from-location" placeholder="From:" />
+      </div>
+      <div class="input-wrapper">
+        <img src="assets/icons/ic_location.svg" />
+        <input type="text" id="to-location" placeholder="To:" />
+      </div>
+    </div>
+
+    <div class="datetime-row">
+      <div class="dt-input" onclick="document.getElementById('order-date').showPicker()">
+        <label>Date</label>
+        <input type="date" id="order-date" />
+      </div>
+      <div class="dt-input" onclick="document.getElementById('order-time').showPicker()">
+        <label>Time</label>
+        <input type="time" id="order-time" />
+      </div>
+    </div>
+
+    <h2 class="section-subtitle">Vehicle category:</h2>
+    <div class="vehicle-selection-grid">
+      <label class="vehicle-option">
+        <input type="radio" name="vehicle-type" value="Small Van" checked />
+        <div class="v-card">
+          <img src="assets/images/small_van.png" alt="Small" />
+          <div class="v-info">
+            <strong>Small van</strong>
+            <span>3-6 m³, 600kg</span>
+          </div>
+        </div>
+      </label>
+      <label class="vehicle-option">
+        <input type="radio" name="vehicle-type" value="Medium Van" />
+        <div class="v-card">
+          <img src="assets/images/medium_van.png" alt="Medium" />
+          <div class="v-info">
+            <strong>Medium van</strong>
+            <span>8-12 m³, 600kg</span>
+          </div>
+        </div>
+      </label>
+      <label class="vehicle-option">
+        <input type="radio" name="vehicle-type" value="Large Van" />
+        <div class="v-card">
+          <img src="assets/images/large_van.png" alt="Large" />
+          <div class="v-info">
+            <strong>Large van</strong>
+            <span>13-18 m³, 1.5t</span>
+          </div>
+        </div>
+      </label>
+      <label class="vehicle-option">
+        <input type="radio" name="vehicle-type" value="Luton Van" />
+        <div class="v-card">
+          <img src="assets/images/truck_van.png" alt="Truck" />
+          <div class="v-info">
+            <strong>Truck van</strong>
+            <span>20-30 m³, 3.5t</span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <h2 class="section-subtitle">Cargo category:</h2>
+    <div class="cargo-selection-grid">
+      <label class="cargo-option">
+        <input type="checkbox" class="cargo-checkbox" value="standard" />
+        <div class="cargo-box">
+          <div class="custom-checkbox"></div>
+          <div class="cargo-text">
+            <strong>Standard</strong>
+            <span>Furniture, boxes, equipment</span>
+          </div>
+        </div>
+      </label>
+      <label class="cargo-option">
+        <input type="checkbox" class="cargo-checkbox" value="valuable" />
+        <div class="cargo-box">
+          <div class="custom-checkbox"></div>
+          <div class="cargo-text">
+            <strong>Valuable</strong>
+            <span>Electronics, tools, etc.</span>
+          </div>
+        </div>
+      </label>
+      <label class="cargo-option">
+        <input type="checkbox" class="cargo-checkbox" value="fragile" />
+        <div class="cargo-box">
+          <div class="custom-checkbox"></div>
+          <div class="cargo-text">
+            <strong>Fragile</strong>
+            <span>Tableware, mirrors, glass</span>
+          </div>
+        </div>
+      </label>
+      <label class="cargo-option">
+        <input type="checkbox" class="cargo-checkbox" value="heavy" />
+        <div class="cargo-box">
+          <div class="custom-checkbox"></div>
+          <div class="cargo-text">
+            <strong>Heavy</strong>
+            <span>Refrigerator, piano, etc.</span>
+          </div>
+        </div>
+      </label>
+    </div>
+    <h2 id="price"></h2>
+    <button id="submit-order-btn" class="main-yellow-btn btn btn--primary">
+      Create order
+    </button>
+  </div>
+</section>

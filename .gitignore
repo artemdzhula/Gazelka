@@ -1,0 +1,40 @@
+# =========================
+# GLOBAL
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# =========================
+# BACKEND (.NET)
+# =========================
+GazelkaServer/**/bin/
+GazelkaServer/**/obj/
+GazelkaServer/**/*.user
+GazelkaServer/**/*.suo
+GazelkaServer/**/*.userosscache
+GazelkaServer/**/*.sln.docstates
+
+# =========================
+# MOBILE
+# =========================
+GazelkaMobile/.gradle/
+GazelkaMobile/build/
+GazelkaMobile/**/build/
+GazelkaMobile/*.iml
+GazelkaMobile/.idea/
+GazelkaMobile/local.properties
+GazelkaMobile/.kotlin/
+**/.kotlin/
+
+appsettings.Development.json
+appsettings.Local.json
+
+# env
+*.env
+*.env.*
+
+gazelka-*.json
+google-services.json
+proguard-rules.pro

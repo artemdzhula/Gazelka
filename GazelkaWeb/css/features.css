@@ -1,0 +1,28 @@
+.features h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .feature-card {
+    padding: 32px;
+    background: #f9f9f9;
+    border-radius: var(--radius-m);
+  }
+  
+  .feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  .feature-card p {
+    color: #555555;
+    font-size: 16px;
+  }

@@ -1,0 +1,1 @@
+﻿public record ResetPasswordDto(string email, string code, string newPassword);

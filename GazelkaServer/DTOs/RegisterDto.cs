@@ -1,0 +1,1 @@
+﻿public record RegisterDto(string Email, string Password, string? Name, string? Surname, string Role, string? CarType, string? CarColor, string? CarNumber, string? PhoneNumber, string? cityName);

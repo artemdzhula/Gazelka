@@ -1,0 +1,43 @@
+.hero {
+  background: #edc014;
+  padding: 65px 0 90px;
+  overflow: hidden;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero__text h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.hero__text p {
+  font-size: 18px;
+  color: #333;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero__single-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-m);
+  display: block;
+}

@@ -1,0 +1,1 @@
+﻿public record ResendEmailCodeDto(string email);

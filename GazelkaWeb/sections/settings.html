@@ -1,0 +1,111 @@
+<section class="settings-container">
+  <div class="section-header">
+    <button id="back-to-landing" class="top-nav-btn back-btn">
+      <img src="assets/icons/logo.svg" alt="Home" class="black-icon" />
+    </button>
+
+    <h2 class="page-title-inline">SETTINGS</h2>
+
+    <div class="summary-menu-wrapper" id="menu-container">
+      <button id="menu-toggle-btn" class="summary-menu-burger">
+        <img src="assets/icons/ic_menu.svg" alt="Menu" class="black-icon" />
+      </button>
+      <div class="summary-menu-list" id="side-menu">
+        <button class="summary-menu-item" id="menu-new-order">
+          <img src="assets/icons/ic_add.svg" alt="New" class="black-icon" />
+        </button>
+        <button class="summary-menu-item" id="menu-chat">
+          <img src="assets/icons/ic_chat.svg" alt="Chat" class="black-icon" />
+        </button>
+        <button class="summary-menu-item" id="menu-history">
+          <img src="assets/icons/ic_history.svg" alt="History" class="black-icon" />
+        </button>
+        <button class="summary-menu-item" id="menu-settings">
+          <img src="assets/icons/ic_settings.svg" alt="Settings" class="black-icon" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="settings-content">
+    <div class="settings-section">
+      <div class="profile-wrapper">
+      <div class="profile-header">
+        <h3 class="section-subtitle">My Profile</h3>
+        <button class="edit-profile-btn" id="edit-profile-btn">
+          <img src="assets/icons/ic_edit.svg" alt="Edit" />
+        </button>
+      </div>
+
+      <div id="profile-view" class="profile-view">
+        <div class="profile-field">
+          <span class="field-label">Name</span>
+          <span class="field-value" id="view-name"></span>
+        </div>
+        <div class="profile-field">
+          <span class="field-label">Surname</span>
+          <span class="field-value" id="view-surname"></span>
+        </div>
+        <div class="profile-field">
+          <span class="field-label">Email</span>
+          <span class="field-value" id="view-email"></span>
+        </div>
+        <div class="profile-field">
+          <span class="field-label">Phone</span>
+          <span class="field-value" id="view-phone"></span>
+        </div>
+      </div>
+
+      <div id="profile-edit" class="profile-edit" style="display: none;">
+        <div class="input-group">
+          <label>Name</label>
+          <input type="text" id="edit-name" placeholder="Enter your name" />
+        </div>
+        <div class="input-group">
+          <label>Surname</label>
+          <input type="text" id="edit-surname" placeholder="Enter your surname" />
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="edit-email" placeholder="Enter your email" />
+        </div>
+        <div class="input-group">
+          <label>Phone</label>
+          <input type="tel" id="edit-phone" placeholder="Enter your phone" />
+        </div>
+        <div class="button-group">
+          <button class="btn-save" id="save-profile-btn">Save Changes</button>
+          <button class="btn-cancel" id="cancel-edit-btn">Cancel</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="aboutus-wrapper">
+        <h3 class="section-subtitle aboutus-header">About Us</h3>
+        <p class="about-text">
+          Gazelka is your trusted logistics partner, providing fast and reliable delivery services.
+          We specialize in van and truck transportation, ensuring your cargo arrives safely and on time.
+        </p>
+        <div class="contact-item">
+          <img src="assets/icons/ic_email.svg" alt="Email" class="contact-icon" />
+          <span>support@gazelka.com</span>
+        </div>
+        <div class="contact-item">
+          <img src="assets/icons/ic_phone.svg" alt="Phone" class="contact-icon" />
+          <span>+1 (555) 123-4567</span>
+        </div>
+      </div>
+
+
+      <button class="change-password-btn" id="change-password-btn">
+        <img src="assets/icons/ic_delete.svg" alt="Change" />
+        Change Password
+      </button>
+      <button class="btn-delete-account" id="delete-account-btn">
+        <img src="assets/icons/ic_delete.svg" alt="Delete" />
+        Delete Account
+      </button>
+    </div>
+  </div>
+</section>

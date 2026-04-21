@@ -1,0 +1,119 @@
+.reviews {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.reviews .container {
+  max-width: 1200px;
+  position: relative;
+  padding: 0 80px;
+}
+
+.reviews__title {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 60px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.reviews-slider-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.reviews-slider {
+  width: 100%;
+  padding: 10px 0 !important;
+}
+
+.review-card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+
+.review-card:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.review-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.review-card__name {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+}
+
+.review-card__meta {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 4px;
+  display: block;
+}
+
+.review-card__rating {
+  color: #edc014;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.review-card__text {
+  flex-grow: 1;
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444444;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000 !important;
+  background: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: none !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important;
+  font-weight: 800;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #fff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-50%) !important;
+}
+
+.swiper-button-prev {
+  left: -60px;
+}
+
+.swiper-button-next {
+  right: -60px;
+}

@@ -1,0 +1,1 @@
+﻿public record DeliveringOrderDto(int OrderId);

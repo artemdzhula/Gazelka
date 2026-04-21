@@ -1,0 +1,32 @@
+.recovery-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.recovery-back-btn:hover {
+  transform: scale(1.1);
+}
+
+.recovery-back-btn img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.auth-link-text {
+  margin: 0;
+  padding: 0;
+}
+
+.auth-link-text a:hover {
+  text-decoration: underline;
+}

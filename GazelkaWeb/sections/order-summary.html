@@ -1,0 +1,147 @@
+<section class="orders-tracking-container">
+  <div class="section-header">
+    <button id="back-to-orders" class="section-header-btn">
+      <img src="assets/icons/logo.svg" alt="Back" />
+    </button>
+
+    <h2>ORDERS</h2>
+
+    <div class="section-menu-wrapper" id="menu-container">
+      <button id="menu-toggle-btn" class="section-menu-burger">
+        <img src="assets/icons/ic_menu.svg" alt="Menu" />
+      </button>
+      <div class="section-menu-list" id="side-menu">
+        <button class="section-menu-item" id="menu-new-order">
+          <img src="assets/icons/ic_add.svg" alt="New" />
+        </button>
+        <button class="section-menu-item" id="menu-chat">
+          <img src="assets/icons/ic_chat.svg" alt="Chat" />
+        </button>
+        <button class="section-menu-item" id="menu-history">
+          <img src="assets/icons/ic_history.svg" alt="History" />
+        </button>
+        <button class="section-menu-item" id="menu-settings">
+          <img src="assets/icons/ic_settings.svg" alt="Settings" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="order-summary-content">
+    <div id="orders-grid-container" class="orders-grid"></div>
+  </div>
+</section>
+
+<!-- Order Details Modal -->
+<div id="order-details-modal" class="order-modal-overlay">
+  <div class="order-modal-container">
+    <!-- Header -->
+    <div class="order-modal-header">
+      <button id="close-order-modal" class="order-modal-back-btn">
+        <img src="assets/icons/ic_arrow_back.svg" alt="Back" />
+      </button>
+      <h2 class="order-modal-title">Order Details</h2>
+    </div>
+
+    <!-- Content -->
+    <div class="order-modal-content">
+      <!-- Order Number & Status -->
+      <div class="order-modal-card">
+        <div class="order-modal-card-header">
+          <span id="modal-order-number">Order #8</span>
+          <span id="modal-order-status" class="order-status-badge">Accepted</span>
+        </div>
+        <button id="modal-edit-order-btn" class="order-edit-order-btn">
+          Edit order
+        </button>
+      </div>
+
+      <!-- Date and Time -->
+      <div class="order-modal-card">
+        <h3 class="order-modal-section-title">Date and Time:</h3>
+        <div class="order-modal-datetime">
+          <div class="order-modal-datetime-item">
+            <span id="modal-order-date">15/01/2026</span>
+          </div>
+          <div class="order-modal-datetime-item">
+            <span id="modal-order-time">18:18</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trip Details -->
+      <div class="order-modal-card">
+        <h3 class="order-modal-section-title">Trip:</h3>
+        <div class="order-modal-trip">
+          <div class="order-modal-location">
+            <span id="modal-location-from">Solec 103, 00-456 Warszawa, Poland</span>
+          </div>
+          <div class="order-modal-distance">
+            <img src="assets/icons/ic_arrow_down.svg" alt="Distance" />
+            <span id="modal-distance">4.899 km</span>
+          </div>
+          <div class="order-modal-location">
+            <span id="modal-location-to">Szwedzka 2/4/17, 03-418 Warszawa, Poland</span>
+          </div>
+        </div>
+      </div>
+      <div class="order-modal-card">
+        <h3 class="order-modal-section-title">Cargo</h3>
+        <div class="order-modal-customer">
+          <div class="order-modal-customer-item">
+            <span id="modal-customer-additional">-</span>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="order-modal-card">
+        <h3 class="order-modal-section-title">Driver:</h3>
+        <div class="order-modal-driver">
+          <div class="order-modal-driver-item">
+            <span id="modal-driver-name">-</span>
+          </div>
+          <div class="order-modal-driver-item">
+            <span id="modal-driver-email">-</span>
+          </div>
+          <div class="order-modal-driver-item">
+            <span id="modal-driver-phone">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-modal-card">
+        <h3 class="order-modal-section-title">Car:</h3>
+        <div class="order-modal-customer">
+          <div class="order-modal-customer-item">
+            <span id="modal-order-cartype">-</span>
+          </div>
+           <div class="order-modal-customer-item">
+            <span id="modal-driver-carcolor">-</span>
+          </div>
+          <div class="order-modal-customer-item">
+            <span id="modal-driver-carnumber">-</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Price -->
+      <div class="order-modal-card order-modal-price-card">
+        <div class="order-modal-price">
+          <span>Price:</span>
+          <span id="modal-order-price" class="order-modal-price-value">50.0$</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="order-modal-actions">
+        <button id="modal-cancel-order-btn" class="order-modal-btn order-modal-btn-cancel">
+          Cancel order
+        </button>
+        <button id="modal-chat-btn" class="order-modal-btn order-modal-btn-chat">
+          Chat
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

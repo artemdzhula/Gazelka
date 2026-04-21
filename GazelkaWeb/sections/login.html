@@ -1,0 +1,60 @@
+<section class="auth-overlay" id="auth-section">
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2 class="auth-card__title">Login</h2>
+
+      <form class="auth-form" action="javascript:void(0);">
+        <input
+          type="email"
+          id="login-email"
+          name="email"
+          class="auth-input"
+          placeholder="Email"
+          required
+          autocomplete="email"
+        />
+
+        <div class="password-wrapper" style="position: relative; width: 100%">
+          <input
+            type="password"
+            id="login-password"
+            class="auth-input"
+            placeholder="Password"
+          />
+
+          <button
+            type="button"
+            id="toggle-password"
+            class="password-toggle-btn"
+            style="
+              position: absolute;
+              right: 15px;
+              background: none;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            <img
+              src="assets/icons/ic_visibility_off.svg"
+              id="password-icon"
+              alt="Toggle"
+            />
+          </button>
+        </div>
+
+        <button type="button" class="btn--auth-submit" id="login-submit-btn">
+          Login
+        </button>
+
+        <p class="auth-link-text" style="text-align: center; margin-top: -5px; margin-bottom: 10px;">
+          <a href="javascript:void(0);" id="forgot-password-link" style="color: #f1c40f; text-decoration: none; font-size: 14px;">Forgot password?</a>
+        </p>
+      </form>
+
+      <p class="auth-switch">
+        Don't have an account?
+        <a href="javascript:void(0);" id="to-register-link">Sign up!</a>
+      </p>
+    </div>
+  </main>
+</section>

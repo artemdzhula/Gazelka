@@ -1,0 +1,1 @@
+﻿public record CreateOrderDto(string PointA, string PointB, string VehicleType, DateTime DateTime, bool Standard, bool Valuable, bool Fragile, bool Heavy);

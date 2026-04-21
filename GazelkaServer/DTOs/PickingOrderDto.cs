@@ -1,0 +1,1 @@
+﻿public record PickingOrderDto(int OrderId);

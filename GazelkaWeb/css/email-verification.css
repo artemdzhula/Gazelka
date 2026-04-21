@@ -1,0 +1,101 @@
+#verify-email[readonly] {
+  background: rgba(255, 255, 255, 0.03) !important;
+  cursor: not-allowed;
+  color: #999 !important;
+}
+
+#verify-email[readonly]:focus {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+#verification-code {
+  font-family: inherit !important;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#verification-code::placeholder {
+  letter-spacing: normal;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+.auth-card__subtitle {
+  color: #999;
+  font-size: 14px;
+  margin: -10px 0 20px 0;
+  line-height: 1.6;
+  font-family: "DM Sans", sans-serif;
+}
+
+.auth-link-text {
+  text-align: center;
+  margin-top: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.auth-link-text a {
+  color: #edc014;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.auth-link-text a:hover {
+  text-decoration: underline;
+  color: #f5d049;
+}
+
+#verify-email-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+#verify-email-btn:active {
+  transform: scale(0.98);
+}
+
+#verify-email-btn.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+#verify-email-btn.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border: 2px solid #000;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card__subtitle {
+    font-size: 13px;
+  }
+
+  #verification-code {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .auth-link-text {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,1 @@
+﻿public record CancelOrderDto(int OrderId);

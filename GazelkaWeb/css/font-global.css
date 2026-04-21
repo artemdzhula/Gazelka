@@ -1,0 +1,22 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+input, 
+button, 
+textarea, 
+select,
+label,
+a,
+p,
+h1, h2, h3, h4, h5, h6,
+.input-box input,
+.input-box label,
+.main-yellow-btn,
+.auth-link-text {
+  font-family: 'DM Sans', sans-serif !important;
+}

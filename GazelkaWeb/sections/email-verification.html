@@ -1,0 +1,50 @@
+<section class="auth-overlay" id="auth-section">
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2 class="auth-card__title">Email Verification</h2>
+      <p class="auth-card__subtitle">
+        We've sent a verification code to your email. Please enter it below to complete registration.
+      </p>
+
+      <form class="auth-form" action="javascript:void(0);">
+        <div class="input-box">
+          <label>Email</label>
+          <input 
+            type="email" 
+            id="verify-email" 
+            class="auth-input"
+            placeholder="Your email"
+            required 
+            readonly
+          />
+        </div>
+
+        <div class="input-box">
+          <label>Verification code</label>
+          <input 
+            type="text" 
+            id="verification-code" 
+            class="auth-input"
+            placeholder="Enter 6-digit code"
+            required 
+            maxlength="6"
+          />
+        </div>
+
+        <button type="button" class="btn--auth-submit" id="verify-email-btn">
+          Verify Email
+        </button>
+        
+        <p class="auth-link-text">
+          Didn't get an email? 
+          <a href="javascript:void(0);" id="resend-code-link">Resend it</a>
+        </p>
+      </form>
+
+      <p class="auth-switch">
+        Already have an account?
+        <a href="javascript:void(0);" id="to-login-link">Login!</a>
+      </p>
+    </div>
+  </main>
+</section>

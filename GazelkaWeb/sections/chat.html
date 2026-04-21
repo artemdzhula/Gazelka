@@ -1,0 +1,78 @@
+<section class="chat-page-container">
+    <div class="section-header">
+      <button id="back-to-landing" class="top-nav-btn back-btn">
+        <img src="assets/icons/logo.svg" alt="Home" class="black-icon" />
+      </button>
+      
+      <h2 class="page-title-inline">CHAT</h2>
+      
+      <div class="summary-menu-wrapper" id="menu-container">
+        <button id="menu-toggle-btn" class="summary-menu-burger">
+          <img src="assets/icons/ic_menu.svg" alt="Menu" class="black-icon" />
+        </button>
+        <div class="summary-menu-list" id="side-menu">
+          <button class="summary-menu-item" id="menu-new-order">
+            <img src="assets/icons/ic_add.svg" alt="New" class="black-icon"/>
+          </button>
+          <button class="summary-menu-item" id="menu-chat">
+            <img src="assets/icons/ic_chat.svg" alt="Chat" class="black-icon"/>
+          </button>
+          <button class="summary-menu-item" id="menu-history">
+            <img src="assets/icons/ic_history.svg" alt="History" class="black-icon"/>
+          </button>
+          <button class="summary-menu-item" id="menu-settings">
+            <img src="assets/icons/ic_settings.svg" alt="Settings" class="black-icon"/>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Список чатов -->
+    <div class="chat-list-view" id="chat-list-view">
+      <div class="chat-item" data-chat-id="1">
+        <div class="chat-avatar">
+          <img src="assets/icons/ic_user.svg" alt="User" />
+        </div>
+        <div class="chat-info">
+          <div class="chat-name"></div>
+          <div class="chat-preview"></div>
+        </div>
+        <div class="chat-meta">
+          <span class="order-badge active"></span>
+        </div>
+      </div>
+
+      <div class="chat-item" data-chat-id="2">
+        <div class="chat-avatar">
+          <img src="assets/icons/ic_user.svg" alt="User" />
+        </div>
+        <div class="chat-info">
+          <div class="chat-name"></div>
+          <div class="chat-preview"></div>
+        </div>
+        <div class="chat-meta">
+          <span class="order-badge inactive"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Экран чата (скрыт по умолчанию) -->
+    <div class="chat-conversation-view" id="chat-conversation-view" style="display: none;">
+      <div class="chat-messages" id="chat-messages">
+        <div class="message driver">
+          <div class="message-bubble">
+          </div>
+          <span class="message-time"></span>
+        </div>
+      </div>
+    
+      <div class="chat-input-area">
+        <div class="chat-input-wrapper">
+          <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" />
+          <button id="send-msg-btn" class="send-btn">
+            <img src="assets/icons/ic_send.svg" alt="Send" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>

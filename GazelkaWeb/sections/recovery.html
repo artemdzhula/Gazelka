@@ -1,0 +1,74 @@
+<address class="auth-overlay" id="recovery-section">
+  <main class="auth-container">
+    <div class="auth-card">
+      <button id="back-to-login" class="recovery-back-btn">
+        <img src="assets/icons/ic_arrow_back.svg" alt="Back" />
+      </button>
+
+      <h2 class="auth-card__title">Reset Password</h2>
+      <p class="auth-card__subtitle">Enter the code sent to your email and your new password</p>
+
+      <input
+          type="text"
+          id="recovery-email"
+          class="auth-input"
+          placeholder="Email"
+          required
+        />
+      
+      <button type="button" class="btn--auth-submit" id="send-code-btn">
+          Send code
+      </button>
+      
+      <form class="auth-form" action="javascript:void(0);">
+        <input
+          type="text"
+          id="recovery-code"
+          class="auth-input"
+          placeholder="Verification Code"
+          required
+          maxlength="6"
+        />
+
+        <div class="password-wrapper" style="position: relative; width: 100%">
+          <input
+            type="password"
+            id="new-password"
+            class="auth-input"
+            placeholder="New Password"
+            required
+          />
+
+          <button
+            type="button"
+            id="toggle-new-password"
+            class="password-toggle-btn"
+            style="
+              position: absolute;
+              right: 15px;
+              background: none;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            <img
+              src="assets/icons/ic_visibility_off.svg"
+              id="new-password-icon"
+              alt="Toggle"
+            />
+          </button>
+        </div>
+
+        <button type="button" class="btn--auth-submit" id="save-password-btn">
+          Save Changes
+        </button>
+
+        <p class="auth-link-text" style="text-align: center; margin-top: 10px;">
+          <a href="javascript:void(0);" id="resend-code-link" style="color: #f1c40f; text-decoration: none; font-size: 14px;">
+            Didn't get email? Resend it!
+          </a>
+        </p>
+      </form>
+    </div>
+  </main>
+</section>
