@@ -14,16 +14,20 @@ The platform allows customers to quickly order cargo transportation services, wh
 The UI/UX of the application was designed in Figma.
 
  View design: https://www.figma.com/design/EWLLfTKqXs01303fshifli/Gazelka?node-id=0-1&t=7rhcebbBx8vg3lMS-1
+<p> <img src="assets/home.png" width="600"/> </p>
 
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <img src="assets/driver.png" height="300"/>
+  <img src="assets/create-order.png" height="300"/>
+  <img src="assets/active-order.png" height="300"/>
+  <img src="assets/map.png" height="300"/>
+</div>
 
 ## 💬 Real-time Chat
 
 The application includes real-time messaging between customer and driver, powered by SignalR.
 
-<p align="center">
-  <img src="assets/chat-demo.gif" width="400"/>
-</p>
-
+![me](https://github.com/artemdzhula/Gazelka/blob/main/assets/Chat-demo.gif).
 
 ## Features
 
@@ -102,6 +106,8 @@ GazelkaWeb/  -  Web application
 GazelkaServer/  -  Server-side application
 
 GazelkaMobile/  -    Mobile application
+
+GazelkaDiplomaThesis.pdf - Diploma thesis
 
 ---
 ### Team
