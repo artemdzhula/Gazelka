@@ -5,8 +5,6 @@ Gazelka is a web and mobile application designed to simplify the flat-to-flat mo
 
 The platform allows customers to quickly order cargo transportation services, while drivers can receive, manage, and complete orders within a single system.
 
-> This project was developed as a Bachelor’s degree thesis in Information Technology (English) at Collegium da Vinci (Poznań, Poland) and received a 5.0 (very good) grade.
-
 ---
 
 ##  Design
@@ -23,7 +21,7 @@ The UI/UX of the application was designed in Figma.
   <img src="assets/map.png" height="300"/>
 </div>
 
-## 💬 Real-time Chat
+## Real-time Chat
 
 The application includes real-time messaging between customer and driver, powered by SignalR.
 
@@ -119,6 +117,3 @@ Oleksii Fronin — Mobile App, UI/UX Design
 Vitalii Sakhno — Web App
 
 ---
-
-### Project Status 
-Bachelor’s Thesis Project (completed)
